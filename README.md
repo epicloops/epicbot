@@ -6,11 +6,11 @@
 
 <a name="overview"/>
 ## Overview
-This repo contains the scrapy web crawler that powers [epicloops.com](http://epicloops.com/).
-The goal of [epicloops.com](http://epicloops.com/) is to use Creative Commons
-audio files from the web as a source of loops and samples to be integrated into
-projects built with [GarageBand](https://www.apple.com/mac/garageband/),
-[Logic](https://www.apple.com/logic-pro/),
+This repo contains the [scrapy](http://doc.scrapy.org/en/latest/)
+web crawler that powers [epicloops.com](http://epicloops.com/). The goal of
+[epicloops.com](http://epicloops.com/) is to use Creative Commons audio files
+from the web as a source of loops and samples to be integrated into projects
+built with [GarageBand](https://www.apple.com/mac/garageband/), [Logic](https://www.apple.com/logic-pro/),
 [ProTools](http://www.avid.com/us/products/family/pro-tools/), etc. The sites
 it is currently capable of crawling include:
 
