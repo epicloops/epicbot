@@ -4,7 +4,7 @@ Twisted==13.2.0
 argparse==1.2.1
 boto==2.27.0
 cssselect==0.9.1
-epic==0.1.0
+epiclib==0.1.0
 lxml==3.2.4
 psycopg2==2.5.2
 pyOpenSSL==0.13.1

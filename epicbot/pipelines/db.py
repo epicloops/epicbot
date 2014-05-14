@@ -7,6 +7,8 @@ from __future__ import unicode_literals
 from scrapy import log
 from scrapy.exceptions import DropItem
 
+from epiclib.db import session
+
 
 class DbPipelineDropItem(DropItem):
 
@@ -17,7 +19,7 @@ class DbPipeline(object):
 
     def __init__(self, crawler):
         self.settings = crawler.settings
-        self.session = crawler.session
+        self.session = session(self.settings['SQLALCHEMY_DATABASE_URI'])
 
     @classmethod
     def from_crawler(cls, crawler):

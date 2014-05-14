@@ -12,7 +12,7 @@ from twisted.internet import threads
 from scrapy import log, signals
 from scrapy.exceptions import DropItem
 
-from epic.utils.fms import S3FM
+from epiclib.utils.fms import S3FM
 
 
 class EchonestPipelineDropItem(DropItem):
@@ -35,7 +35,10 @@ class EchonestPipeline(object):
         return ext
 
     def spider_opened(self, spider):
-        self.s3 = S3FM(self.stats.get_value('crawl_id'))
+        self.s3 = S3FM(self.settings['AWS_ACCESS_KEY_ID'],
+                       self.settings['AWS_SECRET_ACCESS_KEY'],
+                       self.settings['AWS_S3_BUCKET'],
+                       self.stats.get_value('crawl_id'))
 
     def process_item(self, item, spider):
 

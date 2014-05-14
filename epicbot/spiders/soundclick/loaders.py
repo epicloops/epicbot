@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 from scrapy.contrib.loader.processor import MapCompose
 
-from epic.bot.loaders import TrackItemLoader
+from epicbot.loaders import TrackItemLoader
 
 
 class SoundclickTrackItemLoader(TrackItemLoader):

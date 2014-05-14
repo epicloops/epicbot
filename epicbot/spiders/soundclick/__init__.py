@@ -10,11 +10,11 @@ from scrapy.spider import Spider
 from scrapy.http import Request
 from scrapy.selector import Selector
 
-from epic.bot.options import Options
-from epic.bot.utils import errback
-from epic.bot.spiders.soundclick import settings
-from epic.bot.spiders.soundclick.items import SoundclickTrackItem
-from epic.bot.spiders.soundclick.loaders import SoundclickTrackItemLoader
+from epicbot.options import Options
+from epicbot.utils import errback
+from epicbot.spiders.soundclick import settings
+from epicbot.spiders.soundclick.items import SoundclickTrackItem
+from epicbot.spiders.soundclick.loaders import SoundclickTrackItemLoader
 
 
 class SoundclickSpider(Spider):

@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 from scrapy.item import Item, Field
 
-from epic.db.models import Track, DroppedTrack, Sample
+from epiclib.db.models import Track, DroppedTrack, Sample
 
 
 class TrackItem(Item):

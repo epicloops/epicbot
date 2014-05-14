@@ -9,7 +9,7 @@ from scrapy.exceptions import DropItem
 
 from boto.sqs.jsonmessage import JSONMessage
 
-from epic.utils import queue
+from epiclib.utils import queue
 
 
 class QueuePipelineDropItem(DropItem):
@@ -22,7 +22,9 @@ class QueuePipeline(object):
     def __init__(self, crawler):
         self.crawler = crawler
         self.settings = crawler.settings
-        self.queue = queue.create()
+        self.queue = queue.create(self.settings['AWS_REGION'],
+                                  self.settings['AWS_ACCESS_KEY_ID'],
+                                  self.settings['AWS_SECRET_ACCESS_KEY'])
 
     @classmethod
     def from_crawler(cls, crawler):

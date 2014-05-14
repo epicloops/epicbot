@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 from scrapy.item import Field
 
-from epic.bot.items import TrackItem
+from epicbot.items import TrackItem
 
 
 class SoundclickTrackItem(TrackItem):
