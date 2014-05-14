@@ -43,7 +43,7 @@ pip install -r ./epicbot/requirements.txt ./epicbot
 
 ### Installation example:
 For a rough working example of how to get this up and running see this saltstack
-repo: [https://github.com/epicloops/epic-states](https://github.com/epicloops/epic-states)
+repo: [https://github.com/epicloops/epic-states/tree/qa](https://github.com/epicloops/epic-states)
 
 <a name="config"/>
 ## Config
